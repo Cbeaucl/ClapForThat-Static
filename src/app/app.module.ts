@@ -14,6 +14,7 @@ import { GroupsModule } from './groups/groups.module';
   declarations: [
     AppComponent,
     NavComponentComponent,
+    
   ],
   imports: [
     BrowserModule,
