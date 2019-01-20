@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GroupComponent } from './group/group.component';
 import { GroupListComponent } from './group-list/group-list.component';
 import { GroupsComponent } from './groups.component';
-import { MatListModule } from '@angular/material';
+import { MatListModule, MatButtonModule } from '@angular/material';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -11,10 +11,12 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     MatListModule,
-    SharedModule
+    SharedModule,
+    MatButtonModule
   ],
   exports: [
-    GroupsComponent
+    GroupsComponent,
+    GroupComponent
   ]
 })
 export class GroupsModule { }
