@@ -7,24 +7,10 @@
     *ngIf="isHandset$ | async">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
-  <span>Clap For That</span>
+  <mat-icon aria-label="Clapping Icon">pan_tool</mat-icon>
   <button mat-button>Dashboard</button>
   <button mat-button>Groups</button>
 </mat-toolbar>
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Home</a>
-      <a mat-list-item href="#">Groups</a>
-      <a mat-list-item href="#">Settings</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <app-group> </app-group>
-   
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<div>
+  <app-group></app-group>
+</div>
