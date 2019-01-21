@@ -1,6 +1,29 @@
+@import 'group-theme';
 .group-name {
-    padding: 10px;
+    margin-top: 0px;
+    padding-top: 5%; 
+}
+
+span, h1 {
+    color: white;
 }
 .choice-button{
     margin: 10px;
+}
+.content {
+    margin-left: 10%
+}
+.group-summary-container {
+    padding-bottom: 3%;
+}
+.group-summary-div {
+    display: inline-block;
+    margin-right: 5%;
+    
+}
+.group-summary-title {
+    font-size: small;
+}
+.group-summary-value {
+    font-size: xx-large;
 }

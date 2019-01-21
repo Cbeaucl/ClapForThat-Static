@@ -1,0 +1,5 @@
+@import 'app/groups/group/group-theme';
+
+@mixin clap-for-that-theme($theme) {
+    @include group-theme($theme);
+}

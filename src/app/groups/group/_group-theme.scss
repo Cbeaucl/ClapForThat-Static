@@ -1,0 +1,9 @@
+@mixin group-theme($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    app-group {.docs-header-headline {
+        background: mat-color($primary, 400);
+      }
+    }
+}
