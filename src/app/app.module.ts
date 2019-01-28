@@ -8,7 +8,14 @@ import { NavComponentComponent } from './navigation/nav-component.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { GroupsModule } from './groups/groups.module';
+import { Routes, RouterModule } from '@angular/router';
+import { GroupsComponent } from './groups/groups.component';
+import { GroupComponent } from './groups/group/group.component';
 
+const appRoutes: Routes = [
+  { path: 'groups', component:GroupsComponent  },
+  { path: 'groups/:id', component: GroupComponent }
+];
 
 @NgModule({
   declarations: [
@@ -17,6 +24,9 @@ import { GroupsModule } from './groups/groups.module';
     
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes
+    ),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
