@@ -1,4 +1,4 @@
 <mat-nav-list>
-    <mat-list-item *ngFor="let group of groups"> {{ group.name }} </mat-list-item>
+   <a mat-list-item routerLink="/groups/1" *ngFor="let group of groups"> {{ group.name }}</a>
 </mat-nav-list>
 <app-floating-add-button></app-floating-add-button>
