@@ -13,6 +13,7 @@ import { GroupsComponent } from './groups/groups.component';
 import { GroupComponent } from './groups/group/group.component';
 
 const appRoutes: Routes = [
+  {path: '', redirectTo:'/groups', pathMatch: 'full'},
   { path: 'groups', component:GroupsComponent  },
   { path: 'groups/:id', component: GroupComponent }
 ];
